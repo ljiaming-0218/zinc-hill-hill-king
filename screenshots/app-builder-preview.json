@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "深空猎手",
+      "hasCanvas": true,
+      "bodyTextLen": 187,
+      "bodyTextHash": "e7b3d5038644a74266d1ce1b3329c68f4b88d4a6a78c98bc852963becfbfe0ff",
+      "bodyTextPrefix": "DV-07 深空猎手 俯视星域。守住船体，把一波波敌舰清干净。 开始出击 音效开着 WASD 或方向键八向移动，斜向不会更快。 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "深空猎手",
+      "hasCanvas": true,
+      "bodyTextLen": 187,
+      "bodyTextHash": "e7b3d5038644a74266d1ce1b3329c68f4b88d4a6a78c98bc852963becfbfe0ff",
+      "bodyTextPrefix": "DV-07 深空猎手 俯视星域。守住船体，把一波波敌舰清干净。 开始出击 音效开着 WASD 或方向键八向移动，斜向不会更快。 ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND WARNING: this looks like a game/canvas app but /workspace/public/og.jpg is missing. Games and visually rich apps must ship a custom 1200x630 share card built from the app's own art — the default og.grok.me placeholder card is not acceptable for them. You are not done: open /workspace/.grok/skills/og/SKILL.md and finish the brand-asset pass."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

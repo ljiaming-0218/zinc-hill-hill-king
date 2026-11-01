@@ -1,0 +1,60 @@
+@import "@fontsource/sora/latin-400.css";
+@import "@fontsource/sora/latin-600.css";
+@import "@fontsource/sora/latin-700.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sora", "WenQuanYi Zen Hei", "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  --color-void: #071018;
+  --color-panel: #0e1c24;
+  --color-line: #234049;
+  --color-ink: #e7f6f2;
+  --color-mist: #8ea8b0;
+  --color-cyan: #3dffe0;
+  --color-amber: #ffb03a;
+  --color-danger: #ff5c4d;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+    background: var(--color-void);
+    color: var(--color-ink);
+    overscroll-behavior: none;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise-in {
+  animation: rise-in 220ms ease-out;
+}
+
+.safe-pad {
+  padding-top: max(1rem, env(safe-area-inset-top));
+  padding-right: max(1rem, env(safe-area-inset-right));
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  padding-left: max(1rem, env(safe-area-inset-left));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise-in {
+    animation: none;
+  }
+}
